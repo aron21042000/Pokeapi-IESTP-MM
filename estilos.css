@@ -1,4 +1,5 @@
 body{
-    background-image: url(pokemon.png);
-    
+    border: red 8px solid;
+    text-align: center;
+   
 }

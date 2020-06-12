@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="estilos.css">
 </head>
-<body>
+<body style="
+    border: red 8px solid;
+    text-align: center;
+    background-color: aquamarine;
+    
+">
     <div class="imagen">
         
         
@@ -15,13 +20,27 @@
     
     
     <h1>Quien es ese pokemon</h1>
-    <div class="form"></div>
-    <input type="text" class="input"  id="form-nombre" placeholder="Nombre de pokemon">
-    <br><br><br>
-    <input type="email" class="input" id="form-especie" placeholder="Especie">
-    <br><br><br>
-    <input type="button" id="Buscar" value="Buscar">
+    <img src="pokemon.png" width="400px"><br>
+    <select name="" id="order-type">
+        <option value="Fire">Fuego</option>
+        <option value="Ice">Hielo</option>
+        <option value="Flying">Volador</option>
+        <option value="Psychic">Psiquico</option>
+        <option value="Poison">Veneno</option>
+        <option value="Grass">Cesped</option>
+        <option value="Water">Agua</option>
+        <option value="Electric">Electrico</option>
+        <option value="Rock">Piedra</option>
+      
+    </select>
+    <input class=nombrepok id="buscar-pokemon" placeholder="Buscar por nombre">
+    <div class="form" id="poke">
+    
+      
+    </div>
+   </div>
    
+      
     
     <script src="src/data/pokemon.js"></script>
     <script src="java.js"></script>
